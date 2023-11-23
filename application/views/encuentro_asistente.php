@@ -87,26 +87,28 @@ and open the template in the editor.
             <p style="margin-top: 176px;font-size: 31px;">Certifica que:</p>
             <p style="font-weight: bolder;font-size: 39px;margin-top:-40px;"><?php print_r($query[0]->nombre_del_participante) ?></p>
             <p style="font-weight: bolder;margin-top: -50px;font-size: 37px;"><?php print_r($query[0]->tipo_de_documento_de_identidad . " " . $query[0]->n_documento_de_identidad) ?></p>
-            <p style="margin-top: 0px;font-size: 31px;">Participó como:</p>
-            <p style="margin-top: -35px;font-size: 31px;font-weight: bolder;"><?php print_r($query[0]->rol) ?></p>
-            <p style="positon:absolute;margin-top: 41px;font-size: 31px;"><?php print_r($query[0]->nombre_del_evento) ?></p>
-            <p style="margin-top: -36px;font-size: 31px;font-weight: bolder;">&nbsp;</p>
+            <p style="margin-top: -30px;font-size: 31px;">Participó como:</p><p style="font-weight: bolder;margin-top: -45px;font-size: 37px;"><?php print_r($query[0]->rol) ?></p>
+            <p style="margin-top: -30px;font-size: 31px;">En el <?php print_r($query[0]->nombre_del_evento) ?></p>
+            <?php if($query[0]->trabajo_presentado<>""):?></p>
+            <p style="margin-top: -20px;font-size: 30px;">Con el trabajo titulado:</p>
+            <p style="<?php echo ((strlen($query[0]->trabajo_presentado) > 55) ? "position:absolute;;padding: 0 7% 0 5%;" : "") ?>margin-top: -36px;font-size: 25px;font-weight: bolder;"><?php print_r($query[0]->trabajo_presentado) ?></p>
+            <?php endif; ?>
             
         </div>
         
         <br/>
         
-        <div class="w3-cell-row" style="margin-top: 0px;">
+        <div class="w3-cell-row" style="margin-top: 20px;">
 
             <div class="w3-container w3-cell w3-center">
                 <center>
                     
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                 
-                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
-                        <span id="bg-text"><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p>
-                            <p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p></span>
-                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_1) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE - UNIHORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
+                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -25px;font-size: 11px;text-align: left;">
+                        <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
+                            <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
+                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_1) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE </p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
                     </div>
 
                 </center>
@@ -119,10 +121,10 @@ and open the template in the editor.
                     
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                     
-                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
-                        <span id="bg-text"><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p>
-                            <p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p></span>
-                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_2) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE - UNIHORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
+                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -25px;font-size: 11px;text-align: left;">
+                        <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
+                            <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
+                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_2) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
                     </div>
                     
                     <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
@@ -139,7 +141,7 @@ and open the template in the editor.
         <br/>
         
         <div class="w3-container w3-center">
-            <p style="font-size: 22px;margin-top: -1px;"><?php print_r((strcmp($query[0]->rol, "Ponencia" == 0) ? $query[0]->fecha_de_certificacion : $query[0]->duracion)      ) ?>, <?php print_r($query[0]->lugar) ?></p>
+            <p style="font-size: 22px;margin-top: -15px;"><?php print_r((strcmp($query[0]->rol, "Ponencia" == 0) ? $query[0]->fecha_de_certificacion : $query[0]->duracion)      ) ?>, <?php print_r($query[0]->lugar) ?></p>
         </div>
         
     </body>

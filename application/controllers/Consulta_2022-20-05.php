@@ -71,7 +71,7 @@ class Consulta extends CI_Controller {
                                 break;
 
                             case 'Asistente':
-                                $this->load->view('curso_asistente', $data);  //se refiere al archivo \certificados\application\views, es decir, los php
+                                $this->load->view('curso_asistente', $data);
                                 break;
 
                             case 'Ponente':
@@ -106,8 +106,7 @@ class Consulta extends CI_Controller {
                         switch (trim($data['query'][0]->rol)) {
 
                             case 'Organizador':
-                                $this->load->view('certificado_organizador', $data);
-                                //echo "<h1>Certificado en proceso de elaboración.</h1><p>Intente de nuevo más tarde.</p>";
+                                echo "<h1>Certificado en proceso de elaboración.</h1><p>Intente de nuevo más tarde.</p>";
                                 //$this->load->view('curso_organizador', $data);
                                 break;
 
@@ -269,23 +268,23 @@ class Consulta extends CI_Controller {
                                 switch (trim($data['query'][0]->rol)) {
            
                                    case 'Organizador':
-                                       $this->load->view('seminario_organizador', $data);
+                                       $this->load->view('Seminario_organizador', $data);
                                        break;
            
                                    case 'Asistente':
-                                       $this->load->view('seminario_asistente', $data);
+                                       $this->load->view('simposio_asistente', $data);
                                        break;
            
                                    case 'Ponente':
-                                       $this->load->view('seminario_ponente', $data);
+                                       $this->load->view('simposio_ponente', $data);
                                        break;
            
                                     case 'Ponente Central':
-                                       $this->load->view('seminario_organizador', $data);
+                                       $this->load->view('simposio_organizador', $data);
                                        break;
            
                                    case 'Poster':
-                                       $this->load->view('seminario_organizador', $data);
+                                       $this->load->view('simposio_organizador', $data);
                                        break;
                                            
                                    default:
@@ -329,77 +328,9 @@ class Consulta extends CI_Controller {
 
                             break;
 
-                            case 'Taller':
-
-                                switch (trim($data['query'][0]->rol)) {
-           
-                                   case 'Organizador':
-                                    $this->load->view('taller_organizador', $data);
-                                       break;
-           
-                                   case 'Asistente':
-                                       $this->load->view('simposio_asistente', $data);
-                                       break;
-           
-                                   case 'Ponente':
-                                       $this->load->view('taller_ponente', $data);
-                                       break;
-           
-                                    case 'Ponente Central':
-                                       $this->load->view('simposio_organizador', $data);
-                                       break;
-           
-                                   case 'Poster':
-                                       $this->load->view('simposio_organizador', $data);
-                                       break;
-                                   
-                                   case 'Jurado evaluador de proyectos':
-                                       $this->load->view('encuentro_jurado_evaluador_de_proyectos', $data);
-                                       break;    
-                                           
-                                   default:
-                                        echo "<h1>Certificado en proceso de elaboración, prueba Susten.</h1><p>Intente de nuevo más tarde.</p>";
-                                       break;
-                                   }
-       
-                                   break;
+                  
                             
-                            case 'Conversatorio':
-
-                                switch (trim($data['query'][0]->rol)) {
-           
-                                   case 'Organizador':
-                                    $this->load->view('conversatorio_organizador', $data);
-                                       break;
-																	
-           
-                                   case 'Asistente':
-                                       $this->load->view('simposio_asistente', $data);
-                                       break;
-           
-                                   case 'Ponente':
-                                       $this->load->view('conversatorio_ponente', $data);
-                                       break;
-           
-                                    case 'Ponente Central':
-                                       $this->load->view('simposio_organizador', $data);
-                                       break;
-           
-                                   case 'Poster':
-                                       $this->load->view('simposio_organizador', $data);
-                                       break;
-                                   
-                                   case 'Jurado evaluador de proyectos':
-                                       $this->load->view('encuentro_jurado_evaluador_de_proyectos', $data);
-                                       break;    
-                                           
-                                   default:
-                                        echo "<h1>Certificado en proceso de elaboración, prueba Susten.</h1><p>Intente de nuevo más tarde.</p>";
-                                       break;
-                                   }
-       
-                                   break;
-                            
+                                
                         
                     default:
 

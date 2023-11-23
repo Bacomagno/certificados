@@ -91,7 +91,7 @@ and open the template in the editor.
             <p style="margin-top: -30px;font-size: 31px;">En el <?php print_r($query[0]->nombre_del_evento) ?></p>
             <?php if($query[0]->trabajo_presentado<>""):?></p>
             <p style="margin-top: -20px;font-size: 30px;">Con el trabajo titulado:</p>
-            <p style="<?php echo ((strlen($query[0]->trabajo_presentado) > 55) ? "position:absolute;;padding: 0 7% 0 5%;" : "") ?>margin-top: -36px;font-size: 35px;font-weight: bolder;"><?php print_r($query[0]->trabajo_presentado) ?></p>
+            <p style="<?php echo ((strlen($query[0]->trabajo_presentado) > 55) ? "position:absolute;;padding: 0 7% 0 5%;" : "") ?>margin-top: -36px;font-size: 25px;font-weight: bolder;"><?php print_r($query[0]->trabajo_presentado) ?></p>
             <?php endif; ?>
             
         </div>
@@ -105,7 +105,7 @@ and open the template in the editor.
                     
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                 
-                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -35px;font-size: 11px;text-align: left;">
+                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -25px;font-size: 11px;text-align: left;">
                         <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
                             <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
                         <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_1) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE </p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
@@ -121,7 +121,7 @@ and open the template in the editor.
                     
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                     
-                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -35px;font-size: 11px;text-align: left;">
+                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -25px;font-size: 11px;text-align: left;">
                         <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
                             <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
                         <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_2) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>

@@ -87,7 +87,7 @@ and open the template in the editor.
             <p style="margin-top: 176px;font-size: 31px;">Certifica que:</p>
             <p style="font-weight: bolder;font-size: 34px;margin-top:-40px;"><?php print_r($query[0]->nombre_del_participante) ?></p>
             <p style="font-weight: bolder;margin-top: -50px;font-size: 34px;"><?php print_r($query[0]->tipo_de_documento_de_identidad . " " . $query[0]->n_documento_de_identidad) ?></p>
-            <p style="margin-top: 0px;font-size: 31px;">Aprobó el curso de:</p>
+            <p style="margin-top: 0px;font-size: 31px;">organizo el:<?php print_r($query[0]->tipo_de_evento) ?></p>
             <p style="margin-top: -35px;font-size: 34px;font-weight: bolder;"><?php print_r($query[0]->nombre_del_evento) ?></p>
             <p style="positon:absolute;margin-top: 41px;font-size: 31px;">Con una intensidad de <?php print_r($query[0]->duracion) ?></p>
             <p style="margin-top: -60px;font-size: 31px;font-weight: bolder;">&nbsp;</p>
@@ -104,9 +104,9 @@ and open the template in the editor.
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                 
                     <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
-                        <span id="bg-text"><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p>
-                            <p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p></span>
-                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_1) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE - UNIHORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
+                        <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
+                            <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
+                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_1) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
                     </div>
 
                 </center>
@@ -119,11 +119,12 @@ and open the template in the editor.
                     
                     <!--<div style="width: 400px;border: 1px solid;margin-bottom: -15px;"></div>-->
                     
-                    <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
-                        <span id="bg-text"><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p>
-                            <p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p><p>UNIHORIZONTE</p></span>
-                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_2) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE - UNIHORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
+                  <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
+                        <span id="bg-text"><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p>
+                            <p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p><p>HORIZONTE</p></span>
+                        <p>Aprobado Digitalmente por</p><p style="text-transform: uppercase;">&nbsp;<?php print_r($query[0]->firma_2) ?></p><p>&nbsp;FUNDACIÓN UNIVERSITARIA HORIZONTE</p><p>&nbsp;Autenticidad del documento</p><p>&nbsp;Bogotá - Colombia</p>
                     </div>
+                    
                     
                     <div class="firma" style="width: 400px;/* border: 1px solid; */margin-bottom: -15px;font-size: 11px;text-align: left;">
                         <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>

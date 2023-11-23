@@ -1,6 +1,5 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -76,9 +75,11 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'certificados_uh',
+	'username' => 'uhorizonte_ucert',
+	'password' => 'L0F^0\bCO#MH)mn4WEY7Xs{fvV',
+	//'username' => 'uhorizonte_uhzwp2022',
+	//'password' => '*z&EM9aF-wF0L{a4a}',
+	'database' => 'uhorizonte_cert',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
